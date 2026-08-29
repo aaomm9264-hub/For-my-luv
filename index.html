@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary! ❤️</title>
+    <style>
+        body {
+            background-color: #ffe6e8;
+            font-family: 'Tahoma', sans-serif;
+            text-align: center;
+            padding: 30px 15px;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 380px;
+            margin: 0 auto;
+        }
+        h1 { color: #ff4d6d; font-size: 24px; }
+        p { color: #555; font-size: 16px; line-height: 1.5; }
+        
+        /* ปุ่มกดโต้ตอบ */
+        .btn {
+            background-color: #ff758f;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.2s;
+            box-shadow: 0 4px 10px rgba(255, 117, 143, 0.4);
+        }
+        .btn:active { transform: scale(0.95); }
+
+        /* กล่องข้อความที่จะเปลี่ยนเมื่อกดปุ่ม */
+        #secret-msg {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #c9184a;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>สุขสันต์วันครบรอบ 2 เดือนน้าาา ❤️</h1>
+        <p>ลองกดจิ้มปุ่มข้างล่างจิ</p>
+
+        <!-- กล่องแสดงข้อความลับ -->
+        <div id="secret-msg">👇 ตรงนี้เลยอ้วน 👇</div>
+
+        <!-- ปุ่มสำหรับกดเล่น -->
+        <button class="btn" onclick="showLove()">กดเพื่อรับความรักจากน้องออมม 💌</button>
+    </div>
+
+    <script>
+        // รายการข้อความที่จะขึ้นมาเมื่อกดปุ่ม
+        const messages = [
+            "ผ่านมา2เดือนแล้วนะแฟน ไวม๊ากกก ",
+            "ถึงเราจะไม่เคยเจอกันจริงๆ ไม่เคยสัมผัสกันเพราะอยู่ไกล",
+            "แต่เค้าก็ยังรู้สึกว่าอยู่กับเธอตลอดเวลานะ เธอเป็นคนแรกเลยที่เค้าทำอะไรแบบนี้ให้💋",
+            "เค้าโชคดีมากๆๆๆเล้ยที่ได้มีเธออยู่ในชีวืต🤍",
+            "ขอบคุณนะที่ทนอยู่กับเค้ามาได้นานขนาดนี้ เค้าขอโทษที่ชอบเอาแต่ใจ ขี้งอน ขี้แง🥲"
+            "แต่เด็กขี้แงคนนี้ก็รักพี่เวฟแค่คนเดียวนะ ไม่เคยมองหาใครใหม่เข้ามาในชีวิตเลย"
+            "อยู่ด้วยกันไปนานๆนะ จนกว่าเราจะได้เจอกัน ได้อยู่บ้านหลังเดียวกัน ได้มีเด็กตัวเล็กๆที่หน้าตาคล้ายเราวิ่งเล่นในบ้านน 🫶🏻",
+            "เค้ารักแฟนที่สุดเลยยย อย่าพึ่งรีบเบื่อกันไปไหนนะ ถ้าแฟนไม่รักเค้า เค้าก็ไม่รู้จะไปรักใครแล้วจริงๆ🥹"
+        ];
+
+        function showLove() {
+            // สุ่มข้อความจากรายการ
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("secret-msg").innerText = messages[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
+}
+    </script>
+
+</body>
+</html>
